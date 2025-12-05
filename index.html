@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Daily Quotes & Notes - Alexander Hallgren</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <h1>Daily Quotes & Notes</h1>
+        <p class="subtitle">
+          A small app created with help from AI tools (ChatGPT).
+        </p>
+      </header>
+
+      <main>
+        <!-- Quote section -->
+        <section class="card">
+          <h2>Quote of the moment</h2>
+          <p id="quote-text" class="quote-text">
+            Click the button to get a quote.
+          </p>
+          <p id="quote-author" class="quote-author"></p>
+          <button id="new-quote-btn">New quote</button>
+        </section>
+
+        <!-- Notes section -->
+        <section class="card">
+          <h2>My Notes</h2>
+
+          <form id="note-form">
+            <input
+              type="text"
+              id="note-input"
+              placeholder="Write a note and press Enter or Add"
+              autocomplete="off"
+              required
+            />
+            <button type="submit">Add</button>
+          </form>
+
+          <ul id="notes-list"></ul>
+        </section>
+      </main>
+
+      <footer>
+        <p>
+          Built by Alexander Hallgren as a school project using AI-tools
+          (ChatGPT) to generate and improve the code.
+        </p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
